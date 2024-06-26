@@ -12,130 +12,131 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Table(name="ot")
+@Table(name = "overtime_analysis")
 public class OverTimeAnalysis{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-	@Column(name="job_code")
-	private String job_code;
-	
-	@Column(name="job_name")
-	private String job_name;
-	
-	@Column(name="phase_code")
-	private String phase_code;
-	
-	@Column(name="phase_name")
-	private String phase_name;
-	
-	@Column(name="project_code")
-	private String project_code;
-	
-	@Column(name="project_name")
-	private String project_name;
-	
-	@Column(name="estimated_hours")
-	private String estimated_hours;
-	
-	@Column(name="status")
-	private String status;
-	
-	@Column(name="user_id")
-	private int user_id;
-	
-	@Column(name="user_name")
-	private String user_name;
-	
-	@Column(name="attendance_date")
-	private String attendance_date;
-	
-	@Column(name="job_hours")
-	private String job_hours;
-	
-	@Column(name="Job Count")
-	private float job_count;
-	
-	@Column(name="ot1")
-	private String ot1;
-	
-	@Column(name="ot2")
-	private String ot2;
-	
-	@Column(name="Clocked Hours")
-	private float clocked_hours;
-	
-	@Column(name="Overtime_Hours")
-	private float overtime_hours;
-	
-	@Column(name="department-name")
-	private String department_name;
-	
-	@Column(name="designation")
-	private String designation;
-	
-	@Column(name="designation-name")
-	private String designation_name;
-	
-	@Column(name="organization-name")
-	private String organization_name;
-	
-	@Column(name="grade-name")
-	private String grade_name;
-	
-	@Column(name="section-name")
-	private String section_name;
-	
-	@Column(name="category-name")
-	private String category_name;
-	
-	@Column(name="branch-name")
-	private String branch_name;
-	
-	@Column(name="Cost Per Hour")
-	private float cost_per_hour;
-	
-	@Column(name="Cost Incurred")
-	private float cost_incurred;
-	
-	@Column(name="ProjectID")
-	private String project_id;
-	
-	@Column(name="max-end-date")
-	private LocalDate max_end_date;
-	
-	@Column(name="Project Status")
-	private String project_status;
-	
-	@Column(name="HasProjectStarted")
-	private String has_project_started;
-	
-	@Column(name="Active Project")
-	private float active_project;
-	
-	@Column(name="Created Datetime")
-	private LocalDateTime  created_date_time;
-	
-	@Column(name="Start Date Time")
-	private LocalDateTime start_date_time;
-	
-	@Column(name="End Date Time")
-	private LocalDateTime  end_date_time;
-	
-	@Column(name="ProcessDate")
-	private String process_date;
-	
-	@Column(name="FHSHS")
-	private String fhshs;
-	
-	@Column(name="Day")
-	private String day;
-	
-	@Column(name="Overtime-Percent")
-	private String overtime_percent;
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+
+	    @Column(name = "job_code")
+	    private String jobCode;
+
+	    @Column(name = "job_name")
+	    private String jobName;
+
+	    @Column(name = "phase_code")
+	    private String phaseCode;
+
+	    @Column(name = "phase_name")
+	    private String phaseName;
+
+	    @Column(name = "project_code")
+	    private String projectCode;
+
+	    @Column(name = "project_name")
+	    private String projectName;
+
+	    @Column(name = "estimated_hours")
+	    private String estimatedHours;
+
+	    @Column(name = "status")
+	    private String status;
+
+	    @Column(name = "user_id")
+	    private Integer userId;
+
+	    @Column(name = "user_name")
+	    private String userName;
+
+	    @Column(name = "attendance_date")
+	    private String attendanceDate;
+
+	    @Column(name = "job_hours")
+	    private String jobHours;
+
+	    @Column(name = "job_count")
+	    private Float jobCount;
+
+	    @Column(name = "ot1")
+	    private String ot1;
+
+	    @Column(name = "ot2")
+	    private String ot2;
+
+	    @Column(name = "clocked_hours")
+	    private Float clockedHours;
+
+	    @Column(name = "overtime_hours")
+	    private Float overtimeHours;
+
+	    @Column(name = "department_name")
+	    private String departmentName;
+
+	    @Column(name = "designation")
+	    private String designation;
+
+	    @Column(name = "designation_name")
+	    private String designationName;
+
+	    @Column(name = "organization_name")
+	    private String organizationName;
+
+	    @Column(name = "grade_name")
+	    private String gradeName;
+
+	    @Column(name = "section_name")
+	    private String sectionName;
+
+	    @Column(name = "category_name")
+	    private String categoryName;
+
+	    @Column(name = "branch_name")
+	    private String branchName;
+
+	    @Column(name = "cost_per_hour")
+	    private Float costPerHour;
+
+	    @Column(name = "cost_incurred")
+	    private Float costIncurred;
+
+	    @Column(name = "project_id")
+	    private String projectId;
+
+	    @Column(name = "max_end_date")
+	    private LocalDate maxEndDate;
+
+	    @Column(name = "project_status")
+	    private String projectStatus;
+
+	    @Column(name = "has_project_started")
+	    private String hasProjectStarted;
+
+	    @Column(name = "active_project")
+	    private Float activeProject;
+
+	    @Column(name = "created_date_time")
+	    private LocalDateTime createdDatetime;
+
+	    @Column(name = "start_date_time")
+	    private LocalDateTime startDateTime;
+
+	    @Column(name = "end_date_time")
+	    private LocalDateTime endDateTime;
+
+	    @Column(name = "process_date")
+	    private String processDate;
+
+	    @Column(name = "fshhs")
+	    private String fhshs;
+
+	    @Column(name = "day")
+	    private String day;
+
+	    @Column(name = "overtime_percent")
+	    private String overtimePercent;
 }
